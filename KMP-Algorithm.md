@@ -3,4 +3,4 @@
 
 
 
-![Video Solution](https://youtu.be/qases-9gOpk?si=MqYWopU67gSJo9Cl)
+[Video Solution](https://youtu.be/qases-9gOpk?si=MqYWopU67gSJo9Cl)
