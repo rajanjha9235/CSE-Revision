@@ -1,4 +1,17 @@
 # Knuth Moris Pratt Algorithm
+The KMP (Knuth-Morris-Pratt) algorithm is an efficient method for searching for a substring within a main string. It improves the search process by avoiding unnecessary comparisons.
+### Key Features:
+- **Preprocessing Phase** : KMP constructs a "longest prefix-suffix" (LPS) array for the pattern, which helps determine how far to jump in the pattern after a mismatch.
+- **Search Phase** : It scans through the main string using the pattern, utilizing the LPS array to skip over portions of the pattern, reducing the number of comparisons needed.
+
+
+### How It Works:
+- **Build the LPS Array** : For each position in the pattern, the LPS array indicates the length of the longest proper prefix which is also a suffix.
+- **Match the Strings** : Start matching the main string and the pattern. On a mismatch, use the LPS array to determine the next positions to compare, instead of starting over from the beginning of the pattern.
+
+
+
+
 
 - First we need to find the Longest Common Prefix and Suffix from beginning and ending for each element.
 - For Example :- Pattern = `aabcaa` . LPS = [0 , 1 , 0 , 0 , 1 , 2] .
@@ -26,9 +39,9 @@ def calculate_LPS(pattern : str) -> list[int]:
                 i += 1  # Check further
     return lps
 ```
-KMP Algorithm
+- Then we will search the Pattern inside the text given effectively with the help of `LPS`.
 ```python
-def KMP_algo(text : str , pattern : str):
+def Search(text : str , pattern : str):
     n = len(text)
     m = len(pattern)
     ans = []  # Store the indexes where this pattern found in text
@@ -55,6 +68,8 @@ def KMP_algo(text : str , pattern : str):
 - **Time Complexity** :- $$O(n + m)$$
 - **Space Complexity** :- $$O(m)$$   where `m` is length of pattern
 
+
+This algorithm is widely used in string processing tasks, including searching in text editors and implementing features like substring search in programming languages.
 
 ### Some Practice Problems :
 - GFG : [Search Pattern](https://www.geeksforgeeks.org/problems/search-pattern0205/1)
