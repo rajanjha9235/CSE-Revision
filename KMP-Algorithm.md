@@ -54,7 +54,10 @@ def KMP_algo(text : str , pattern : str):
 ```
 - **Time Complexity** :- $$O(n + m)$$
 - **Space Complexity** :- $$O(m)$$   where `m` is length of pattern
+
+
 ### Some Practice Problems :
-- [Search Pattern GFG](https://www.geeksforgeeks.org/problems/search-pattern0205/1)
+- GFG : [Search Pattern](https://www.geeksforgeeks.org/problems/search-pattern0205/1)
+- LeetCode 214 : [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/description/)
 
 ### [YouTube Video Solution](https://youtu.be/qases-9gOpk?si=MqYWopU67gSJo9Cl)
