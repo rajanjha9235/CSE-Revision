@@ -74,5 +74,6 @@ This algorithm is widely used in string processing tasks, including searching in
 ### Some Practice Problems :
 - GFG : [Search Pattern](https://www.geeksforgeeks.org/problems/search-pattern0205/1)
 - LeetCode 214 : [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/description/)
+- GFG : [Longest Prefix Suffix](https://www.geeksforgeeks.org/problems/longest-prefix-suffix2527/1)
 
 ### [YouTube Video Solution](https://youtu.be/qases-9gOpk?si=MqYWopU67gSJo9Cl)
