@@ -85,3 +85,5 @@ This algorithm is widely used in string processing tasks, including searching in
 - GFG : [Longest Prefix Suffix](https://www.geeksforgeeks.org/problems/longest-prefix-suffix2527/1)
 
 ### [YouTube Video Solution](https://youtu.be/qases-9gOpk?si=MqYWopU67gSJo9Cl)
+
+**[Reference](https://yuminlee2.medium.com/knuth-morris-pratt-kmp-algorithm-string-matching-fb2a3ec6d682)**
