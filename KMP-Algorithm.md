@@ -1,18 +1,26 @@
 # Knuth Moris Pratt Algorithm
 The KMP (Knuth-Morris-Pratt) algorithm is an efficient method for searching for a substring within a main string. It improves the search process by avoiding unnecessary comparisons.
+![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*lA9ysp9igTuUwsbPxI8VQQ.png)
+![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*Ixnj2k8qd9wxkTgKolhH0g.png)
 ### Key Features:
 - **Preprocessing Phase** : KMP constructs a "longest prefix-suffix" (LPS) array for the pattern, which helps determine how far to jump in the pattern after a mismatch.
 - **Search Phase** : It scans through the main string using the pattern, utilizing the LPS array to skip over portions of the pattern, reducing the number of comparisons needed.
 
+![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*wgpZZqgzoJ706gzjPiaG1A.png)
+![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*fYWz9Rdqfl11FFjQjfiMHg.png)
 
 ### How It Works:
 - **Build the LPS Array** : For each position in the pattern, the LPS array indicates the length of the longest proper prefix which is also a suffix.
+- ![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*R1-PCF78paVBRGBlJyx6uw.png)
+- ![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*e5uz6qGt77btRVI4Dbj36w.png)
+- ![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*mlEp0cOmChpE2asGpzoSeQ.png)
+- ![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*LJbzImGYYj0jowL6gbdeLg.png)
+
 - **Match the Strings** : Start matching the main string and the pattern. On a mismatch, use the LPS array to determine the next positions to compare, instead of starting over from the beginning of the pattern.
-
-
-
-
-
+- 
+- ![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*0isa_pKn3o77jOHiusvtew.png)
+- ![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*cjdpNXCHc2LFne12YpKJPw.png)
+- 
 - First we need to find the Longest Common Prefix and Suffix from beginning and ending for each element.
 - For Example :- Pattern = `aabcaa` . LPS = [0 , 1 , 0 , 0 , 1 , 2] .
 - For Example :- Pattern = `aaca` . LPS = [0 , 1 , 0 , 1] .
