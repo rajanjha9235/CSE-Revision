@@ -13,12 +13,12 @@ A Trie, or prefix tree, is a specialized tree-like data structure used primarily
 - **Efficiency** : Tries enable fast insertions, deletions, and lookups, typically with a time complexity of O(m), where m is the length of the string.
 - **Prefix Search** : They excel in scenarios where prefix searches are common, making them suitable for applications like autocomplete and spell checking.
 - **Memory Usage** : Tries can use more memory than other data structures due to the overhead of storing pointers for each character.
-
+![image](https://miro.medium.com/v2/resize:fit:1396/1*e3549k5A9oCLn-vZTxsFEA.gif)
 #### Operations:
 - **Insert** : Adding a string involves traversing the Trie, creating new nodes as needed.
 - **Search** : Checking for a string's presence or finding all strings with a given prefix.
 - **Delete** : Removing a string involves traversing to the end of the string and marking it as not a valid word, then cleaning up any nodes that are no longer needed.
-
+![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*aJxRGNYe52CE_bVRt0E1Eg.gif)
 
 
 
@@ -105,6 +105,9 @@ class Trie:
             curr = curr.children[char]
         return True     # This prefix is present in Trie
 ```
+
+![image](https://hackernoon.com/hn-images/1*X1t7eWTWF0u8IcDkvDrxdA.gif)
+
 ## Time Complexity :
 The time complexity of operations in a Trie largely depends on the length of the strings involved rather than the number of strings stored. Here are the complexities for the primary operations:
 
@@ -129,6 +132,7 @@ The time complexity of operations in a Trie largely depends on the length of the
    - If you want to list all words stored in the Trie, where n is the number of words, the time complexity can be considered O(m * n) because you might need to traverse each word stored, and each traversal is O(m).
 
 - In summary, the key takeaway is that the operations of inserting, searching, and deleting strings in a Trie have a time complexity of O(m), where m is the length of the string involved. This makes Tries efficient for handling string operations, especially when dealing with a large number of strings or prefix-based queries.
+
 
 
 #### Applications:
