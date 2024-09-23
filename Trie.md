@@ -8,6 +8,7 @@ A Trie, or prefix tree, is a specialized tree-like data structure used primarily
 - **Children** : Each node can have multiple children, representing possible continuations of the string.
 - **End of Word Marker** : Nodes may contain a flag to indicate whether they represent the end of a valid string.
 
+![image](https://datastructures.maximal.io/img/tries/trie-1.svg)
 #### Characteristics :
 - **Efficiency** : Tries enable fast insertions, deletions, and lookups, typically with a time complexity of O(m), where m is the length of the string.
 - **Prefix Search** : They excel in scenarios where prefix searches are common, making them suitable for applications like autocomplete and spell checking.
@@ -112,28 +113,22 @@ The time complexity of operations in a Trie largely depends on the length of the
    - Where m is the length of the string being inserted. Each character in the string is processed, resulting in a linear time complexity relative to the string's length.
 
 3. **Search**
+    - Time Complexity: O(m)
+    - Similar to insertion, searching for a string also involves traversing each character of the string, leading to a linear time complexity based on the string's length.
 
-    Time Complexity: O(m)
-        Similar to insertion, searching for a string also involves traversing each character of the string, leading to a linear time complexity based on the string's length.
+4. **Deletion**
+    - Time Complexity: O(m)
+    - Deleting a string involves traversing the Trie to find the end of the string, and potentially modifying the structure to remove nodes that are no longer needed. This also takes linear time relative to the length of the string.
 
-4. Deletion
+5. **Prefix Search**
+   - Time Complexity: O(m)
+   - Searching for all strings with a given prefix involves traversing the Trie up to the length of the prefix, which is also linear in terms of the prefix length.
 
-    Time Complexity: O(m)
-        Deleting a string involves traversing the Trie to find the end of the string, and potentially modifying the structure to remove nodes that are no longer needed. This also takes linear time relative to the length of the string.
+6. **Listing All Words**
+   - Time Complexity: O(m * n)
+   - If you want to list all words stored in the Trie, where n is the number of words, the time complexity can be considered O(m * n) because you might need to traverse each word stored, and each traversal is O(m).
 
-5. Prefix Search
-
-    Time Complexity: O(m)
-        Searching for all strings with a given prefix involves traversing the Trie up to the length of the prefix, which is also linear in terms of the prefix length.
-
-6. Listing All Words
-
-    Time Complexity: O(m * n)
-        If you want to list all words stored in the Trie, where n is the number of words, the time complexity can be considered O(m * n) because you might need to traverse each word stored, and each traversal is O(m).
-
-Summary
-
-In summary, the key takeaway is that the operations of inserting, searching, and deleting strings in a Trie have a time complexity of O(m), where m is the length of the string involved. This makes Tries efficient for handling string operations, especially when dealing with a large number of strings or prefix-based queries.
+- In summary, the key takeaway is that the operations of inserting, searching, and deleting strings in a Trie have a time complexity of O(m), where m is the length of the string involved. This makes Tries efficient for handling string operations, especially when dealing with a large number of strings or prefix-based queries.
 
 
 #### Applications:
