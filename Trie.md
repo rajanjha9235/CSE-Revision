@@ -133,7 +133,9 @@ The time complexity of operations in a Trie largely depends on the length of the
 
 - In summary, the key takeaway is that the operations of inserting, searching, and deleting strings in a Trie have a time complexity of O(m), where m is the length of the string involved. This makes Tries efficient for handling string operations, especially when dealing with a large number of strings or prefix-based queries.
 
-
+## Practice Problems :
+1. **LeetCode 208** : [Trie Implementation](https://leetcode.com/problems/implement-trie-prefix-tree/)
+2. **LeetCode 3043** : [Find Length of Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/)
 
 #### Applications:
 - Autocomplete systems
