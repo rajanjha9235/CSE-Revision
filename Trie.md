@@ -137,6 +137,9 @@ The time complexity of operations in a Trie largely depends on the length of the
 1. **LeetCode 208** : [Trie Implementation](https://leetcode.com/problems/implement-trie-prefix-tree/)
 2. **LeetCode 3043** : [Find Length of Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/)
 3. **LeetCode 2416** :  [Sum of Prefix scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings)
+4. **LeetCode 211**  :  [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure)
+5. **LeetCode 677**  :  [Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs)
+6. **LeetCode 421**  :  [Maximum XOR of two numbers in Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array)
 
 #### Applications:
 - Autocomplete systems
