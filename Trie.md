@@ -136,6 +136,7 @@ The time complexity of operations in a Trie largely depends on the length of the
 ## Practice Problems :
 1. **LeetCode 208** : [Trie Implementation](https://leetcode.com/problems/implement-trie-prefix-tree/)
 2. **LeetCode 3043** : [Find Length of Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/)
+3. **LeetCode 2416** :  [Sum of Prefix scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings)
 
 #### Applications:
 - Autocomplete systems
