@@ -140,6 +140,7 @@ The time complexity of operations in a Trie largely depends on the length of the
 4. **LeetCode 211**  :  [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure)
 5. **LeetCode 677**  :  [Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs)
 6. **LeetCode 421**  :  [Maximum XOR of two numbers in Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array)
+7. **LeetCode 3093**  :  [Longest Common Suffix Queries](https://leetcode.com/problems/longest-common-suffix-queries/)
 
 #### Applications:
 - Autocomplete systems
