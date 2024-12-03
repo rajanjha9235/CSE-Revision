@@ -1,5 +1,6 @@
 # Knuth Moris Pratt Algorithm
 The KMP (Knuth-Morris-Pratt) algorithm is an efficient method for searching for a substring within a main string. It improves the search process by avoiding unnecessary comparisons.
+
 ![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*lA9ysp9igTuUwsbPxI8VQQ.png)
 ![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*Ixnj2k8qd9wxkTgKolhH0g.png)
 ### Key Features:
